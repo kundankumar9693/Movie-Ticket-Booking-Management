@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Movie Ticket Booking</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>🎬 Movie Ticket Booking</h1><nav><a href="#movies">Movies</a><a href="#bookings">My Bookings</a><a href="#admin">Admin</a></nav></header>
+<main><section id="movies"><h2>Now Showing</h2><div id="movieList" class="grid"></div></section>
+<section id="booking"><h2>Book Tickets</h2><div class="card"><label>Show</label><select id="show"></select><label>Your Name</label><input id="name" placeholder="Enter name"><label>Email</label><input id="email" type="email" placeholder="you@example.com"><label>Seats</label><input id="seats" type="number" min="1" value="1"><p id="cost">Total: ₹0</p><button onclick="book()">Confirm Booking</button></div></section>
+<section id="bookings"><h2>Booking Details</h2><div id="bookingList"></div></section>
+<section id="admin"><h2>Admin - Add Show</h2><div class="card"><input id="movieId" placeholder="Movie ID"><input id="theatre" placeholder="Theatre"><input id="date" placeholder="YYYY-MM-DD"><input id="time" placeholder="HH:MM"><input id="total" type="number" placeholder="Total seats"><input id="price" type="number" placeholder="Ticket price"><button onclick="addShow()">Add Show</button></div></section></main>
+<script src="app.js"></script></body></html>
